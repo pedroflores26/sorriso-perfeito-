@@ -14,10 +14,13 @@
   <div class="container header-content">
   <div class="brand">
   <img src="logo.png" alt="Sorriso Perfeito">
+  
 </div>
+<button class="menu-toggle">☰</button>
 
-    <nav>
+    <nav id="navMenu">
       <ul>
+        
         <li><a href="#home">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#galeria">Galeria</a></li>
@@ -128,9 +131,18 @@
 </section>
 
 <footer>
+  
   <p>© 2026 Sorriso Perfeito - Clínica Odontológica Premium</p>
 </footer>
 
 <script src="script.js"></script>
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.getElementById('navMenu');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
 </body>
 </html>
