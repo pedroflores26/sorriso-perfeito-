@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorriso Perfeito | Clínica Odontológica Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="container header-content">
+  <div class="brand">
+  <img src="logo.png" alt="Sorriso Perfeito">
+</div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+
+      <div class="weather-container">
+        <input type="text" id="cidadeInput" placeholder="Cidade..." />
+
+        <div id="weatherBox" class="weather-box">
+          <span id="weatherMain">--</span>
+          <div id="weatherPanel" class="weather-panel"></div>
+        </div>
+      </div>
+
+      <button id="toggleDark" class="dark-btn">🌙</button>
+
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2>Excelência e Sofisticação em Cada Sorriso</h2>
+    <p>Odontologia moderna com tecnologia de ponta.</p>
+    <a href="#contato" class="btn">Agendar Consulta</a>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">Clareamento Dental</div>
+      <div class="card">Implantes Premium</div>
+      <div class="card">Ortodontia Invisível</div>
+      <div class="card">Lentes de Contato Dental</div>
+      <div class="card">Harmonização Orofacial</div>
+      <div class="card">Reabilitação Oral</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA ADICIONADA -->
+<section id="galeria" class="section bg-light">
+  <div class="container">
+    <h2>Galeria de Sorrisos</h2>
+    <div class="grid">
+      <div class="card"><img src="positive-human-facial-expressions-emotions-feelings-beautiful-cute-teenage-girl-blue-dress-closing-eyes-with-enjoyment.jpg" alt="Sorriso 1" style="width:100%; border-radius:8px;"></div>
+      <div class="card"><img src="man-being-outside-smile-while-looking-camera.jpg" alt="Sorriso 2" style="width:100%; border-radius:8px;"></div>
+      <div class="card"><img src="young-hispanic-girl-smiling-happy-walking-city.jpg" alt="Sorriso 3" style="width:100%; border-radius:8px;"></div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="section bg-light">
+  <div class="container">
+    <h2>O Que Nossos Pacientes Dizem</h2>
+    <div class="grid">
+      <div class="card depo">
+        <p>"Atendimento impecável e ambiente luxuoso."</p>
+        <div class="stars">★★★★★</div>
+        <span>— Maria Silva</span>
+      </div>
+      <div class="card depo">
+        <p>"Resultados impressionantes."</p>
+        <div class="stars">★★★★★</div>
+        <span>— João Pedro</span>
+      </div>
+      <div class="card depo">
+        <p>"Melhor clínica que já visitei!"</p>
+        <div class="stars">★★★★★</div>
+        <span>— Ana Clara</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container">
+    <h2>Agende Sua Consulta</h2>
+
+    <form id="formContato">
+
+      <!-- CAMPOS ADICIONADOS -->
+      <input type="text" id="nome" placeholder="Nome">
+      <input type="email" id="email" placeholder="Email">
+
+      <input type="text" id="cep" placeholder="CEP">
+      <input type="text" id="rua" placeholder="Rua">
+      <input type="text" id="bairro" placeholder="Bairro">
+      <input type="text" id="cidade" placeholder="Cidade">
+      <input type="text" id="estado" placeholder="Estado">
+
+      <textarea id="mensagem" placeholder="Mensagem"></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+
+      <p id="formMsg" class="form-msg"></p>
+
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sorriso Perfeito - Clínica Odontológica Premium</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
