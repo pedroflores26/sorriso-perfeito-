@@ -418,8 +418,5 @@ body.dark footer{
     display:block;
   }
 
-  .weather-container{
-    display:none; /* esconde clima no celular */
-  }
 
 }
